@@ -4,59 +4,75 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="experiment-id" content="exp_596dc7bc04">
 <title>Landing Page – Open‑Source Health‑Wellness Affiliate Chatbot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    max-width: 720px; margin: 0 auto; padding: 48px 24px; line-height: 1.65; color: #1a1a1a; }
-  h1 { font-size: 2.2rem; line-height: 1.2; margin-bottom: 0.4em; }
-  h2 { font-size: 1.4rem; margin-top: 1.8em; }
-  a { color: #2563eb; }
-  ul { padding-left: 1.2em; }
-  .cta { display:inline-block; margin-top: 1.5em; padding: 14px 28px; background:#2563eb;
-    color:#fff; border-radius: 8px; text-decoration:none; font-weight:600; }
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{--dark:#451a03;--accent:#ea580c;--accent2:#fb923c;--light:#fff7ed}
+  body{font-family:'Inter',system-ui,sans-serif;color:#1a1a2e;line-height:1.6;background:#fff}
+  h1,h2,h3{font-family:'Plus Jakarta Sans',sans-serif;line-height:1.15}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  .wrap.narrow{max-width:680px}
+  section{padding:80px 0}
+  /* Hero */
+  .hero{background:linear-gradient(135deg,var(--dark),var(--accent));color:#fff;
+    padding:120px 0 100px;text-align:center;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:0;
+    background:radial-gradient(circle at 70% 20%,var(--accent2)22,transparent 50%);opacity:.4}
+  .hero .wrap{position:relative;z-index:1}
+  .hero h1{font-size:clamp(2.4rem,5vw,3.8rem);font-weight:800;max-width:14ch;margin:0 auto .5em;
+    letter-spacing:-.02em}
+  .hero p.sub{font-size:1.3rem;opacity:.92;max-width:46ch;margin:0 auto 2.2em;font-weight:400}
+  .btn{display:inline-block;background:#fff;color:var(--dark);padding:16px 38px;border-radius:999px;
+    font-weight:600;text-decoration:none;font-size:1.05rem;transition:transform .15s,box-shadow .15s;
+    box-shadow:0 8px 30px rgba(0,0,0,.18)}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(0,0,0,.25)}
+  .hero .btn{background:#fff}
+  section.pricing .btn,section.cta .btn{background:var(--accent);color:#fff}
+  /* Benefits */
+  .benefits{background:var(--light)}
+  h2{font-size:2rem;font-weight:800;text-align:center;margin-bottom:1.4em;letter-spacing:-.01em}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+  .card{background:#fff;border-radius:18px;padding:32px;box-shadow:0 4px 24px rgba(0,0,0,.06);
+    border:1px solid rgba(0,0,0,.04)}
+  .card-icon{width:44px;height:44px;border-radius:12px;background:var(--accent);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin-bottom:16px}
+  .card p{font-size:1.05rem;color:#374151}
+  /* Pricing */
+  .price-list{list-style:none;text-align:center;margin-bottom:2em}
+  .price-list li{padding:16px;font-size:1.15rem;border-bottom:1px solid #eee}
+  .pricing{text-align:center}
+  /* Testimonials */
+  .testimonials{background:var(--dark);color:#fff}
+  .testimonials h2{color:#fff}
+  blockquote{max-width:680px;margin:0 auto 28px;font-size:1.35rem;text-align:center;
+    font-style:italic;opacity:.95;line-height:1.5}
+  blockquote::before{content:'\201C';font-size:2em;color:var(--accent2);vertical-align:-.3em}
+  /* FAQ */
+  .faq-item{border-bottom:1px solid #eee;padding:22px 0}
+  .faq-item h3{font-size:1.15rem;margin-bottom:.4em}
+  .faq-item p{color:#555}
+  /* CTA + footer */
+  .cta{background:linear-gradient(135deg,var(--accent),var(--dark));color:#fff;text-align:center}
+  .cta h2{color:#fff}
+  footer{padding:40px 0;text-align:center;color:#9ca3af;font-size:.9rem}
+  @media(max-width:640px){section{padding:56px 0}.hero{padding:90px 0 70px}}
 </style>
 </head><body>
-<h1>Landing Page – Open‑Source Health‑Wellness Affiliate Chatbot</h1>
-<h2>Headline</h2>
-<p><strong>Get Trusted Health Product Recommendations Instantly – Free, No‑Code Widget</strong></p>
-<h2>Sub‑head</h2>
-<p>A lightweight, embeddable JavaScript widget that answers health‑related questions and shows vetted product references—without tracking clicks or charging a dime.</p>
-<p>---</p>
-<h3>Benefit #1 – Instant, Accurate Answers</h3>
-<ul>
-<li><strong>Natural‑language queries</strong>: Users type questions like “Best probiotic for gut health” and receive concise, AI‑generated answers.</li>
-<li><strong>Curated product list</strong>: Each answer includes a short, vetted list of supplements, wearables, or tele‑health services for further reading.</li>
-</ul>
-<h3>Benefit #2 – Easy to Add Anywhere</h3>
-<ul>
-<li><strong>One‑line embed</strong>: Paste a single script tag into any site or blog—no backend server needed.</li>
-<li><strong>Fully open‑source</strong>: MIT‑licensed code on GitHub, free for commercial or personal use.</li>
-</ul>
-<h3>Benefit #3 – Trust & Transparency</h3>
-<ul>
-<li><strong>Information‑only</strong>: Links are displayed purely for reference; we do <strong>not</strong> track clicks or earn commissions.</li>
-<li><strong>Clear disclaimer</strong>: Prominently states that the widget provides informational content, not medical advice.</li>
-</ul>
-<p>---</p>
-<h2>Social Proof (Placeholder)</h2>
-<p>> <em>“The widget boosted our user engagement by 30% and saved us weeks of development time.”</em> — <strong>(Name, Health Blog)</strong></p>
-<p>> <em>“Our community loves the quick answers—no more endless scrolling for product research.”</em> — <strong>(Name, Wellness Newsletter)</strong></p>
-<p>---</p>
-<h2>Call‑to‑Action (CTA) Copy</h2>
-<p><strong>[Get the Widget Now – Free on GitHub]</strong></p>
-<p>> <em>Click the button to download the widget, view the documentation, and add it to your site in minutes.</em></p>
-<p>---</p>
-<h2>Frequently Asked Questions</h2>
-<p>1. <strong>Is the widget truly free?</strong></p>
-<p>   Yes. The code is open‑source under an MIT license. You can use it on any site without paying a fee.</p>
-<p>2. <strong>Will I earn commissions from the product links?</strong></p>
-<p>   No. The widget displays links for reference only; we do not track clicks or receive any affiliate revenue.</p>
-<p>3. <strong>Do I need a server to run the widget?</strong></p>
-<p>   No. It is a client‑side JavaScript widget that can be hosted on any static site.</p>
-<p>4. <strong>How is the product data kept up‑to‑date?</strong></p>
-<p>   We curate the list manually and release quarterly updates via the GitHub repo.</p>
-<p>5. <strong>Can I customize the look and feel?</strong></p>
-<p>   Absolutely. The widget’s CSS can be overridden, and the source code is fully editable for branding.</p>
-<p>---</p>
-<p><em>Ready to provide your audience with reliable health product recommendations?</em></p>
+  <section class="hero"><div class="wrap">
+    <h1>Landing Page – Open‑Source Health‑Wellness Affiliate Chatbot</h1>
+    <p class="sub">A lightweight, embeddable JavaScript widget that answers health‑related questions and shows vetted product references—without tracking clicks or charging a dime.</p>
+    <a class="btn" href="#signup">Get Started</a>
+  </div></section>
+  <section class="benefits"><div class="wrap"><h2>What you get</h2><div class="grid"><div class="card"><div class="card-icon">✓</div><p>Natural‑language queries: Users type questions like “Best probiotic for gut health” and receive concise, AI‑generated answers.</p></div><div class="card"><div class="card-icon">✓</div><p>Curated product list: Each answer includes a short, vetted list of supplements, wearables, or tele‑health services for further reading.</p></div><div class="card"><div class="card-icon">✓</div><p>One‑line embed: Paste a single script tag into any site or blog—no backend server needed.</p></div><div class="card"><div class="card-icon">✓</div><p>Fully open‑source: MIT‑licensed code on GitHub, free for commercial or personal use.</p></div><div class="card"><div class="card-icon">✓</div><p>Information‑only: Links are displayed purely for reference; we do not track clicks or earn commissions.</p></div><div class="card"><div class="card-icon">✓</div><p>Clear disclaimer: Prominently states that the widget provides informational content, not medical advice.</p></div></div></div></section>
+  
+  
+  
+  <section class="cta" id="signup"><div class="wrap">
+    <h2>Ready to start?</h2>
+    <p style="font-size:1.2rem;margin-bottom:1.8em;opacity:.9">Join now and see the difference.</p>
+    <a class="btn" href="#">Get Started</a>
+  </div></section>
+  <footer>© 2026 · Built autonomously · <span style="opacity:.5">exp_596dc7bc04</span></footer>
 </body></html>
