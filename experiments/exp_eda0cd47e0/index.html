@@ -3,7 +3,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="experiment-id" content="exp_eda0cd47e0">
-<title>Chosen winner: Idea 1 – SMB Compliance Automation** (highest score, clear paying‑customer signal, and low‑cost acquisition via professional networks).</title>
+<title>Simplify Compliance Management</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
@@ -15,21 +15,32 @@
   .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
   .wrap.narrow{max-width:680px}
   section{padding:80px 0}
+  /* Nav */
+  nav{position:absolute;top:0;left:0;right:0;z-index:2;padding:22px 0}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between}
+  nav .logo{font-family:'Plus Jakarta Sans';font-weight:800;color:#fff;font-size:1.25rem;letter-spacing:-.02em}
+  nav a.navcta{color:#fff;text-decoration:none;font-weight:600;font-size:.95rem;
+    border:1.5px solid rgba(255,255,255,.4);padding:9px 20px;border-radius:999px}
   /* Hero */
   .hero{background:linear-gradient(135deg,var(--dark),var(--accent));color:#fff;
-    padding:120px 0 100px;text-align:center;position:relative;overflow:hidden}
+    padding:150px 0 100px;text-align:center;position:relative;overflow:hidden}
   .hero::after{content:"";position:absolute;inset:0;
     background:radial-gradient(circle at 70% 20%,var(--accent2)22,transparent 50%);opacity:.4}
   .hero .wrap{position:relative;z-index:1}
-  .hero h1{font-size:clamp(2.4rem,5vw,3.8rem);font-weight:800;max-width:14ch;margin:0 auto .5em;
+  .hero .eyebrow{text-transform:uppercase;letter-spacing:.15em;font-size:.8rem;
+    font-weight:600;opacity:.8;margin-bottom:1.4em}
+  .hero h1{font-size:clamp(2.4rem,5vw,3.8rem);font-weight:800;max-width:16ch;margin:0 auto .4em;
     letter-spacing:-.02em}
-  .hero p.sub{font-size:1.3rem;opacity:.92;max-width:46ch;margin:0 auto 2.2em;font-weight:400}
+  .hero p.sub{font-size:1.3rem;opacity:.92;max-width:50ch;margin:0 auto 2.2em;font-weight:400}
   .btn{display:inline-block;background:#fff;color:var(--dark);padding:16px 38px;border-radius:999px;
     font-weight:600;text-decoration:none;font-size:1.05rem;transition:transform .15s,box-shadow .15s;
     box-shadow:0 8px 30px rgba(0,0,0,.18)}
   .btn:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(0,0,0,.25)}
+  .btn.buy{background:var(--accent2);color:var(--dark);margin-left:12px}
   .hero .btn{background:#fff}
+  .hero .trust{margin-top:1.6em;font-size:.9rem;opacity:.75}
   section.pricing .btn,section.cta .btn{background:var(--accent);color:#fff}
+  section.pricing .btn.buy{background:var(--accent2);color:var(--dark)}
   /* Benefits */
   .benefits{background:var(--light)}
   h2{font-size:2rem;font-weight:800;text-align:center;margin-bottom:1.4em;letter-spacing:-.01em}
@@ -57,22 +68,29 @@
   .cta{background:linear-gradient(135deg,var(--accent),var(--dark));color:#fff;text-align:center}
   .cta h2{color:#fff}
   footer{padding:40px 0;text-align:center;color:#9ca3af;font-size:.9rem}
-  @media(max-width:640px){section{padding:56px 0}.hero{padding:90px 0 70px}}
+  @media(max-width:640px){section{padding:56px 0}.hero{padding:120px 0 70px}
+    nav .logo{font-size:1.1rem}.btn.buy{margin-left:0;margin-top:12px}}
 </style>
 </head><body>
+  <nav><div class="wrap">
+    <div class="logo">SimplifyCompliance</div>
+    <a class="navcta" href="#signup">Start now — $49/mo</a>
+  </div></nav>
   <section class="hero"><div class="wrap">
-    <h1>Chosen winner: Idea 1 – SMB Compliance Automation** (highest score, clear paying‑customer signal, and low‑cost acquisition via professional networks).</h1>
-    <p class="sub">A better way to solve a real problem.</p>
-    <a class="btn" href="#signup">Get Started</a>
+    <p class="eyebrow">Now available</p>
+    <h1>Simplify Compliance Management</h1>
+    <p class="sub">Automate GDPR, PCI-DSS, and SOC 2 compliance for small-to-medium businesses with our easy-to-use tool.</p>
+    <a class="btn" href="#signup">Start now — $49/mo</a>
+    <p class="trust">No credit card to start · Set up in minutes</p>
   </div></section>
+  <section class="benefits"><div class="wrap"><h2>What you get</h2><div class="grid"><div class="card"><div class="card-icon">✓</div><p>Get audit-ready reports in minutes, not hours or days.</p></div><div class="card"><div class="card-icon">✓</div><p>Reduce the risk of non-compliance and associated fines.</p></div><div class="card"><div class="card-icon">✓</div><p>Free up staff to focus on core business activities, not tedious paperwork.</p></div></div></div></section>
+  <section class="pricing"><div class="wrap narrow"><h2>Pricing</h2><ul class="price-list"><li>Starter — $49/mo — Automated evidence collection and basic reporting for up to 10 users.</li><li>Pro — $149/mo — Advanced reporting, custom workflows, and priority support for up to 50 users.</li></ul><a class="btn" href="#signup">Start now — $49/mo</a></div></section>
   
-  
-  
-  
+  <section class="faq"><div class="wrap narrow"><h2>Questions</h2><div class="faq-item"><h3>What if I'm not sure which compliance regulations apply to my business?</h3><p>Our tool is designed to guide you through the process and ensure you're meeting the necessary requirements.</p></div><div class="faq-item"><h3>Can I try the tool before committing to a paid plan?</h3><p>Yes, we offer a 14-day free trial, so you can see how our tool works for your business before deciding.</p></div></div></section>
   <section class="cta" id="signup"><div class="wrap">
     <h2>Ready to start?</h2>
     <p style="font-size:1.2rem;margin-bottom:1.8em;opacity:.9">Join now and see the difference.</p>
-    <a class="btn" href="#">Get Started</a>
+    <a class="btn" href="#">Start now — $49/mo</a>
   </div></section>
   <footer>© 2026 · Built autonomously · <span style="opacity:.5">exp_eda0cd47e0</span></footer>
 </body></html>
